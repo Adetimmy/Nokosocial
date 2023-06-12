@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nokoSocial</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="../jQuery.js"></script>
+</head>
+<script>
+    $("document").ready(function(){
+      $(".selection .rec").click(function(){
+          $(".req").slideDown(1000)
+          $(".req").css("z-index", "60")
+          $(".req h4").css("text-align", "right")
+          $(".req h4").css("color", "white")
+          $(".req h4").css("width", "fit-content")
+          $(".req h4").css("padding", ".4rem")
+          $(".req h4").css("background", "black")
+          $(".selection .rec").css("color", "black")
+      })
+      $(".selection .gen").click(function(){
+          $(".req").fadeOut(1000)
+          $(".selection .rec").css("color", "var(--color-primary)")
+      })
+      $(".selection .guys").click(function(){
+          $(".req").fadeOut(1000)
+          $(".selection .rec").css("color", "var(--color-primary)")
+      })
+    })
+</script>
+<body>
+    <nav>
+        <div class="nav__container container">
+            <h2>nokoSocial</h2>
+            <div class="searchbar">
+                <img style="cursor:pointer" src="/IMAGES/Search.png">
+                <input type="search" placeholder="Search for creators, inspirations, and projects">
+            </div>
+            <div class="createbar">
+                <label class="btn btn-primary" for="create post">Create</label>
+                <div class="searchimg">
+                    <img src="/IMAGES/imge (15).webp">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="body container">
+            <div class="asideleft">
+                <a class="profile">
+                    <div class="searchimg" >
+                        <img src="/IMAGES/imge (15).webp">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana Ayi</h4>
+                        <p class="text-muted">@dayi</p>
+                    </div>
+                </a>
+            
+                <div class="left">
+                    <a class="icos active">
+                        <span class="text-bold"><img src="/IMAGES/home.svg"></span><h3>Home</h3>
+                    </a>
+
+                    <a class="icos">
+                        <span><img src="/IMAGES/compass.svg"></span><h3>Explore</h3> 
+                    </a>
+
+                    <a class="notificationtag icos">
+                        <span><img src="/IMAGES/bell.svg"><small class="notification-count"><i>9+</i></small></span><h3>Notifications</h3>
+                        <div id="notificationbar">
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (16).jpg">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Keke Benjamin</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (16).webp">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Doris Y. Lartey</b> commented on a post you're tagged in
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (17).jpg">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Ayilvor Mensah</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (17).webp">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Mary oppong</b> and <b>283 others</b> liked your post
+                                    <small class="text-muted">4 MINUTES AGO</small>
+                                </div>
+                            </div>
+
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (18).jpg">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Donald Trump</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div class="notificationwrapper">
+                                <div class="searchimg">
+                                    <img src="/IMAGES/imge (18).webp">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Jane Doe</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </a>  
+
+                    <a id="message-notification" class="icos">
+                        <span><img style="filter: invert(50%);" src="/IMAGES/envelope-alt.svg"><small class="notification-count"><i>6</i></small></span><h3>Message</h3>
+                    </a>
+
+                    <a class="icos">
+                        <span><img src="/IMAGES/chart-line.svg"></span><h3>Analytics</h3>
+                    </a>
+
+                    <a class="icos" id="theme">
+                        <span><img src="/IMAGES/palette.svg"></span><h3>Themes</h3>
+                    </a>
+
+                    <a class="icos">
+                        <span><img src="/IMAGES/setting.svg"></span><h3>Settings</h3>
+                    </a>
+                </div>
+                <label class="btn btn-primary" for="create post">Create Post</label>
+            </div>
+            <div class="mainmiddle">
+                <div class="middle-container">
+                    <div class="topbar">
+                        <div class="topbar-hold">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (1).webp">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Elaine Jones</p>
+                            </div>
+                        </div>
+
+                        <div class="topbar-hold" style="background-image: linear-gradient(0, 0, 0, 0.2), url('../IMAGES/imge\ \(10\).jpg');">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (1).jpg">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Authur Mex</p>
+                            </div>
+                        </div>
+
+                        <div class="topbar-hold">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (15).jpg">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Merlin Klint</p>
+                            </div>
+                        </div>
+
+                        <div class="topbar-hold">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (10).jpg">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Diet Beef</p>
+                            </div>
+                        </div>
+
+                        <div class="topbar-hold">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (10).webp">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Cold Stone</p>
+                            </div>
+                        </div>
+
+                        <div class="topbar-hold">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (11).jpg">
+                            </div>
+                            <div class="topbar-name">
+                                <p>Bilal Sani</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="searchimg">
+                            <img src="/IMAGES/imge (15).webp">
+                        </div>
+                        <form>
+                            <input type="text" placeholder="what's on your mind, Diana?">
+                            <input type="submit" value="Post" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (1).jpg"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/chef.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/avatar_g.jpg"></span>
+                                        <span><img src="/IMAGES/dan.jpg"></span>
+                                        <span><img src="/IMAGES/img-4.png"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+                        
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (1).webp"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/architect-1.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/avatar_hat.jpg"></span>
+                                        <span><img src="/IMAGES/bandmember.jpg"></span>
+                                        <span><img src="/IMAGES/bridge.jpg"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (2).jpg"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/cherries.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/croissant.jpg"></span>
+                                        <span><img src="/IMAGES/FILE449.JPG"></span>
+                                        <span><img src="/IMAGES/FILE679.JPG"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (2).webp"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/workshop.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/wine.jpg"></span>
+                                        <span><img src="/IMAGES/steak.jpg"></span>
+                                        <span><img src="/IMAGES/sanfran.jpg"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (3).jpg"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/gondol.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/house1.jpg"></span>
+                                        <span><img src="/IMAGES/house2.jpg"></span>
+                                        <span><img src="/IMAGES/house3.jpg"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+
+                        <div class="feed-container">
+                            <div class="feed-content">
+                                <div class="feedtop">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (3).jpg"> 
+                                        
+                                    </div>
+                                    <div class="upptext">
+                                        <a class="user-name">Lorem, ipsum dolor.</a>
+                                        <p class="text-muted">Active 2 hours Ago</p>
+                                    </div>
+                                    <div>
+                                        <a>&hellip;</a>
+                                    </div>
+                                </div>
+                                <div class="feedimg">
+                                    <img src="/IMAGES/house4.jpg">
+                                </div>
+                                <div class="feedicons">
+                                    <div class="feedicons-heart">
+                                        <span><img src="/IMAGES/heart.svg"></span>
+                                        <span><img src="/IMAGES/comment-dots.svg"></span>
+                                        <span><img src="/IMAGES/share-alt.svg"></span>
+                                    </div>
+                                    <span><img src="/IMAGES/bookmark.svg"></span>
+                                </div>
+                                <div class="searchimg-cont">
+                                    <div class="seachimg">
+                                        <span><img src="/IMAGES/house5.jpg"></span>
+                                        <span><img src="/IMAGES/house6.jpg"></span>
+                                        <span><img src="/IMAGES/house7.jpg"></span>
+                                    </div>
+                                    <div class="liked"> 
+                                        <p><b>Lorem, ipsum.</b> and <b>244 others liked</b> your photo</p>
+                                    </div>
+                                </div>
+                               
+                                <p><b class="user-name">Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Fuga excepturi sint repudiandae! In velit esse architecto illo iure, error atque!</p>
+                                <p class="text-muted">View all 2440 comments</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="asideright">
+                <div class="right">
+                    <div class="righthold">
+                        <div class="messages">
+                            <div>
+                               <h4>Messages</h4>
+                            </div>
+                            <div class="edit" style="cursor: pointer;">
+                                <span><img src="/IMAGES/edit (1).svg"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="searchbar">
+                            <img style="cursor:pointer" src="/IMAGES/Search.png">
+                            <input type="search" placeholder="Search messages" class="msearch">
+                        </div>
+
+                        <div class="selection">
+                                <p class="msg guys active ">Primary</p>
+                                <p class="msg gen">General</p>
+                                <p class="msg rec">Requests(8)</p>
+                        </div>
+
+                        <div class="feedtop">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (3).jpg">     
+                            </div>
+                            <div class="upptext">
+                                <h5>Edem Quist</h5>
+                                <p class="text-muted">just woke up bruh</p>
+                            </div>
+                        </div>
+
+                        <div class="feedtop">
+                            <div class="searchimg  fi">
+                                <img src="/IMAGES/imge (3).webp">     
+                            </div>
+                            <div class="upptext">
+                                <h5>John Doe</h5>
+                                <p class="text-bold">How far?</p>
+                            </div>
+                        </div>
+
+                        <div class="feedtop">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (4).jpg">     
+                            </div>
+                            <div class="upptext">
+                                <h5>Usman Mommoh</h5>
+                                <p class="text-muted">Why didn't you pick?</p>
+                            </div>
+                        </div>
+
+                        <div class="feedtop">
+                            <div class="searchimg fi">
+                                <img src="/IMAGES/imge (4).webp">     
+                            </div>
+                            <div class="upptext">
+                                <h5>Agent Jun</h5>
+                                <p class="text-bold">hope you know how sick you look right!</p>
+                            </div>
+                        </div>
+
+                        <div class="feedtop">
+                            <div class="searchimg">
+                                <img src="/IMAGES/imge (5).jpg">     
+                            </div>
+                            <div class="upptext">
+                                <h5>Abdulkadir Jamal</h5>
+                                <p class="text-muted">We're still in class, where r u?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="req">
+                        <h4>Requests</h4>
+                        <div class="requests">
+                            <div class="reqholder">
+                                <div class="requestbelow">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (6).jpg">     
+                                    </div>
+                                    <div class="friendrequest">
+                                        <h5>Firdaus Abdulhamid</h5>
+                                        <p class="text-muted">you have 8 mutual friends</p>
+                                    </div> 
+                                </div>
+                                <form>
+                                    <input type="submit" value="Accept" class="btn btn-primary">
+                                    <input type="submit" value="Decline" class="btn">
+                                </form>
+                            </div>   
+                        </div>  
+
+                        <div class="requests">
+                            <div class="reqholder">
+                                <div class="requestbelow">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (6).webp">     
+                                    </div>
+                                    <div class="friendrequest">
+                                        <h5>Aisha Usman</h5>
+                                        <p class="text-muted">you have 59 mutual friends</p>
+                                    </div> 
+                                </div>
+                                <form>
+                                    <input type="submit" value="Accept" class="btn btn-primary">
+                                    <input type="submit" value="Decline" class="btn">
+                                </form>
+                            </div>   
+                        </div>  
+
+                        <div class="requests">
+                            <div class="reqholder">
+                                <div class="requestbelow">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (7).webp">     
+                                    </div>
+                                    <div class="friendrequest">
+                                        <h5>Faruk Mohammed</h5>
+                                        <p class="text-muted">you have 8 mutual friends</p>
+                                    </div> 
+                                </div>
+                                <form>
+                                    <input type="submit" value="Accept" class="btn btn-primary">
+                                    <input type="submit" value="Decline" class="btn">
+                                </form>
+                            </div>   
+                        </div>  
+
+                        <div class="requests">
+                            <div class="reqholder">
+                                <div class="requestbelow">
+                                    <div class="searchimg">
+                                        <img src="/IMAGES/imge (7).jpg">     
+                                    </div>
+                                    <div class="friendrequest">
+                                        <h5>Ibrahim Lawal</h5>
+                                        <p class="text-muted">you have 12 mutual friends</p>
+                                    </div> 
+                                </div>
+                                <form>
+                                    <input type="submit" value="Accept" class="btn btn-primary">
+                                    <input type="submit" value="Decline" class="btn">
+                                </form>
+                            </div>   
+                        </div>  
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+        
+        <!-- --------Customized Views---------------------- -->
+        <div class="custom">
+            <div class="customi">
+                <div class="customiz">
+                    <h2>Customize your view</h2>
+                    <p class="text-muted">Manage your font size, color, and background</p>
+                </div>
+
+                <div class="customfont">
+                    <h5 class="text-bold">Font Size</h5>
+                    <div class="customs">
+                        <span>Aa</span>
+                        <div class="chosefont">
+                            <span class="fon-0 active"></span>
+                            <span class="fon-1"></span>
+                            <span class="fon-2"></span>
+                            <span class="fon-3"></span>
+                            <span class="fon-4"></span>
+                        </div>
+                        <span>Aa</span>
+                    </div>
+                </div>
+
+                <div class="customcolor">
+                    <h5 class="text-bold">Color</h5>
+                    <div class="customs">
+                        <div class="chosecolor">
+                            <span class="color active"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customcolor">
+                    <h5 class="text-bold">Background</h5>
+                    <div class="cust">
+                        <div class="chosebackground">
+                            <div class="light active">
+                                <span class="lit preactive"></span>
+                                <span class="color">Light</span>
+                            </div>
+                            <div class="dim">
+                                <span class="ret"></span>
+                                <span class="color">Dim</span>
+                            </div>
+                            <div class="lights">
+                                <span class="ret"></span>
+                                <span class="color">Lights Out</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  <script src="/index.js"></script>  
+</body>
+</html>
